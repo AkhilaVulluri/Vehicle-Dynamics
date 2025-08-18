@@ -6,7 +6,7 @@ The goal is to simplify complex automotive engineering topics into clear, practi
 ---
 
 ## 📄 Articles
-- [Understanding Rolling Resistance](./Rolling_Resistance.md)  
+- [Understanding Rolling Resistance](rolling-resistance.md)  
 - (More articles coming soon…)
 
 ---

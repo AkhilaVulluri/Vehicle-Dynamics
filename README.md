@@ -21,3 +21,10 @@ This repo is part of my journey to share knowledge, document learning, and build
 - Clone the repo:
   ```bash
   git clone https://github.com/<your-username>/vehicle-dynamics.git
+  Browse .md articles directly on GitHub or in your Markdown editor.
+  
+---
+
+## 📜 License
+
+This project is licensed under the MIT License – see the LICENSE file for details.

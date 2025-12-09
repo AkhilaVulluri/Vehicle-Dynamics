@@ -1,7 +1,8 @@
 # Vehicle Dynamics Articles 🚗⚙️
 
-This repository contains my articles and notes on **Vehicle Dynamics** concepts such as Rolling Resistance, Aerodynamics, Tire Mechanics, and more.  
-The goal is to simplify complex automotive engineering topics into clear, practical, and engaging explanations.
+This repository contains my articles, notes, and explanations on **Vehicle Dynamics** concepts such as **Rolling Resistance, Aerodynamics, Tire Mechanics, Gradient Forces, Road-Load Modeling**, and more.
+
+The goal is to **simplify complex automotive engineering topics** into clear, practical, and engaging explanations that help students, engineers, and professionals understand real-world vehicle behavior.
 
 ---
 
@@ -12,9 +13,15 @@ The goal is to simplify complex automotive engineering topics into clear, practi
 ---
 
 ## 🔍 About
-I’m Akhila, with 3+ years of experience in the Automotive Industry (Vehicle Dynamics & Fuel Economy Testing).  
-This repo is part of my journey to share knowledge, document learning, and build a strong GitHub portfolio.
+I'm **Akhila**, an Automotive Engineer with 3+ years of experience in **Vehicle Dynamics, EV/HEV Simulation, Fuel Economy Modeling, and Coast-Down Testing**.
 
+This repository is part of my journey to:
+- Share engineering knowledge  
+- Document continuous learning  
+- Build a strong public technical portfolio  
+- Help others understand vehicle dynamics in a simple, visual way  
+
+Each article connects **theoretical concepts** with **real automotive applications**.
 ---
 
 ## 🛠️ How to Use

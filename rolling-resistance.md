@@ -2,6 +2,7 @@
 
 When you try to push a car with a flat tire, it feels much harder than pushing a car with properly inflated tires. The reason lies in a fundamental concept of mechanical engineering called **rolling resistance**.
 
+
 ---
 
 ## 🔹 What is Rolling Resistance?

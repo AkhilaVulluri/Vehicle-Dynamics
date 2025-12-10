@@ -11,6 +11,14 @@ As speed increases, drag rapidly becomes the *dominant* force influencing:
 
 Understanding drag is essential for designing efficient EVs, optimizing simulations, and predicting road-load forces.
 
+<img width="678" height="405" alt="Aerodynamics_DragLiftDownforceOverBodyFlow" src="https://github.com/user-attachments/assets/c9fd348f-c3f2-4c53-87f0-0e54dc58dc35" />
+
+![ev-aerodynamics-og](https://github.com/user-attachments/assets/f84d6cb8-1425-4986-ba06-f74ae6f0e948)
+
+![Unplugged-Performance-Tesla-Model-3-Aerondynamic-Study_02](https://github.com/user-attachments/assets/3cdb252a-f59e-4501-b4c3-46cc510d09a6)
+
+
+
 ---
 
 ## 📘 1. What Is Aerodynamic Drag?

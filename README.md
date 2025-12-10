@@ -8,7 +8,7 @@ The goal is to **simplify complex automotive engineering topics** into clear, pr
 
 ## 📄 Articles
 - [Understanding Rolling Resistance](rolling-resistance.md)
-- [Understanding Aerodynamic]()
+- [Understanding Aerodynamic](https://github.com/AkhilaVulluri/Vehicle-Dynamics/blob/8cec2eebe1aaead032ab47c02faa29a556a9f6f9/aerodynamic-drag.md)
 - (More articles coming soon…)
 
 ---

@@ -15,6 +15,12 @@ The total resistive force acting on a vehicle is expressed as:
 F_{road} = f_0 + f_1 v + f_2 v^2
 \]
 
+Where:
+- \(F_{road}\) = total road load force  
+- \(v\) = vehicle speed  
+- \(f_0, f_1, f_2\) = road load coefficients
+
+
 ### Explanation  
 This equation tells us how resistance changes with vehicle speed:
 

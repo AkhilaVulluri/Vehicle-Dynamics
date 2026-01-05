@@ -16,6 +16,12 @@ The content is structured for:
 - Motorsport enthusiasts
 - Performance & simulation engineers
 - EV dynamics learners
+  
+## ⚖️ Weight Transfer Overview
+
+![Weight Transfer Overview](images/weight_transfer_overview.png)
+
+*Illustration showing longitudinal and lateral weight transfer during acceleration, braking, and cornering.*
 
 ---
 
@@ -76,6 +82,12 @@ Occurs due to:
 Primarily handled by suspension design and damping.
 
 
+## ➡️ Longitudinal Weight Transfer
+
+![Longitudinal Weight Transfer](images/longitudinal_weight_transfer.png)
+
+*During braking, load shifts to the front axle.  
+During acceleration, load shifts to the rear axle.*
 
 
 ### a. Longitudinal Weight Transfer
@@ -92,6 +104,11 @@ Applications:
 - EV regenerative braking
 
 ---
+## 🔄 Lateral Weight Transfer
+
+![Lateral Weight Transfer](images/lateral_weight_transfer.png)
+
+*Load shifts from inside wheels to outside wheels during cornering due to lateral acceleration.*
 
 ### b. Lateral Weight Transfer
 Occurs during:
@@ -218,6 +235,11 @@ This directly impacts:
 ---
 
 ## 📘 7. Weight Transfer vs Weight Distribution
+## ⚡ EV Weight Transfer
+
+![EV Weight Transfer](images/ev_weight_transfer.png)
+
+*High mass and regenerative braking significantly affect longitudinal load transfer in EVs.*
 
 Important distinction:
 
@@ -309,6 +331,11 @@ If rearward transfer is excessive:
 ---
 
 ## 🏁 12. Lateral Weight Transfer in Motorsport
+## 🏎️ Motorsport Weight Transfer Example
+
+![Motorsport Weight Transfer](images/motorsport_weight_transfer.png)
+
+*Different phases of a corner show distinct weight transfer behavior affecting grip and stability.*
 
 During cornering:
 - Load transfers from **inside tires to outside tires**
@@ -375,8 +402,20 @@ This explains:
 - Why excessive body roll hurts performance
 - Why balanced setups often outperform aggressive ones
 - Why tire management wins endurance races
+  
+## 🛞 Tire Load Sensitivity
+
+![Tire Load Sensitivity](images/tire_load_sensitivity.png)
+
+*Tire grip increases with load, but not linearly.  
+Uneven load distribution reduces total available grip.*
 
 ---
+## 🛠️ Suspension Control of Weight Transfer
+
+![Suspension Weight Transfer](images/suspension_weight_transfer.png)
+
+*Springs, dampers, and anti-roll bars control the rate and distribution of weight transfer.*
 
 ## 🧪 15. Engineering Trade-Offs
 

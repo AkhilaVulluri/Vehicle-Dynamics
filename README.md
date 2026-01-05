@@ -13,6 +13,7 @@ The goal is to **simplify complex automotive engineering topics** into clear, pr
 - [Understanding Traction Force Vs Resistive Force](https://github.com/AkhilaVulluri/Vehicle-Dynamics/blob/e3700f6bae1f459a076a08ce3414f87218f11516/traction-force-vs-resistive-forces.md)
 - [Understanding CoastDown Testing ](https://github.com/AkhilaVulluri/Vehicle-Dynamics/blob/cee708ac04d8ae9b89852323e9f0215cbaec6c7c/Coast-Down-Testing.md)
 - [Understanding Road Load Coefficient](https://github.com/AkhilaVulluri/Vehicle-Dynamics/blob/40a4f5f4bfd44e3b3d1ac225c38511085715e7f4/Road-Load-Coefficients.md)
+- [Weigth Transfer](https://github.com/AkhilaVulluri/Vehicle-Dynamics/blob/96c09ed648cbc20971bf56dddd1bcef74ea42dfe/Weight%20Transfer.md)
 - (More articles coming soon…)
 
 ---

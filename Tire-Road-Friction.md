@@ -223,10 +223,155 @@ s = \frac{27.78^2}{2 \times 5.89} \approx 65.5 \, \text{m}
 
 ---
 
-## 🧠 Engineering Insight
-Even with the same brakes and driver input, braking distance increases significantly as tire–road friction decreases. This is why road condition awareness is critical for safety.
+## 🚗 Real-World Scenario: Highway Emergency Braking While Turning
+
+### Scenario:
+You are driving at **100 km/h (27.78 m/s)** on a dry highway (μ = 1.0).  
+Suddenly, traffic slows ahead while you are already in a gentle curve.
+
+You must:
+- Brake hard  
+- Maintain steering to stay in your lane  
+
+This is a **combined braking + cornering** situation.
 
 ---
+
+## Step 1: Available Maximum Tire Force
+
+Assume:
+- Vertical load per tire = 4000 N  
+- μ = 1.0  
+
+Maximum friction force per tire:
+\[
+F_{max} = \mu \cdot N = 1.0 \times 4000 = 4000 \, N
+\]
+
+This is the total force available for BOTH:
+- Longitudinal (braking)
+- Lateral (cornering)
+
+---
+
+## Step 2: Required Lateral Force for the Curve
+
+Assume curve radius = 200 m
+
+\[
+a_y = \frac{v^2}{R}
+= \frac{27.78^2}{200}
+\approx 3.86 \, m/s^2
+\]
+
+Lateral force per tire (simplified):
+
+\[
+F_{lat} = m \cdot a_y / 4
+\]
+
+For 1500 kg vehicle:
+
+\[
+F_{lat,total} = 1500 \times 3.86 = 5790 \, N
+\]
+
+Per tire:
+
+\[
+F_{lat} \approx 1448 \, N
+\]
+
+So each tire is already using:
+**~1448 N of its 4000 N friction capacity** for cornering.
+
+---
+
+## Step 3: Remaining Braking Capacity
+
+Using friction circle:
+
+\[
+F_{long} = \sqrt{4000^2 - 1448^2}
+\approx 3727 \, N
+\]
+
+So maximum braking force per tire ≈ 3727 N.
+
+Total braking force:
+
+\[
+F_{brake,total} \approx 4 \times 3727
+= 14908 \, N
+\]
+
+---
+
+## Step 4: Compare to Straight-Line Braking
+
+Straight-line maximum braking:
+
+\[
+F_{max,total} = 4 \times 4000 = 16000 \, N
+\]
+
+So braking capability reduces from:
+- **16000 N → 14908 N**
+
+📌 That is ~7% reduction in braking force just due to cornering.
+
+---
+
+## Engineering Insight
+
+- When braking in a curve, tires must split friction between steering and braking.
+- As braking demand increases, lateral capability reduces.
+- If braking force exceeds available friction:
+  - Front tires saturate first
+  - Vehicle understeers
+  - Steering becomes ineffective
+
+This explains why:
+- Heavy braking mid-corner causes understeer
+- ABS activates sooner during turning
+- Smooth brake release before turn-in improves stability
+
+---
+
+## Wet Road Version (μ = 0.6)
+
+Now repeat with μ = 0.6:
+
+Maximum per tire:
+\[
+F_{max} = 0.6 \times 4000 = 2400 \, N
+\]
+
+Now:
+
+Lateral force (1448 N) already consumes:
+\[
+\frac{1448}{2400} \approx 60\%
+\]
+
+Remaining braking capacity:
+
+\[
+F_{long} = \sqrt{2400^2 - 1448^2}
+\approx 1890 \, N
+\]
+
+Total braking:
+
+\[
+7560 \, N
+\]
+
+📌 On wet roads, braking while cornering reduces stopping ability drastically.
+
+---
+
+
 
 ## ⚙️ ABS Slip-Ratio Example
 
@@ -545,13 +690,77 @@ Proper trail braking:
 📌 It is a practical demonstration of **tire–road friction management**.
 
 ---
+
+
+## 💻 Mini MATLAB Example – Tire Friction Modeling
+
+To better understand tire–road friction behavior, we can visualize:
+
+1. The **friction circle**
+2. The **slip ratio vs friction curve**
+
+Below is a simple MATLAB script for demonstration.
+
+---
+
+### 📌 1. Friction Circle Visualization
+
+matlab
+clc; clear; close all;
+
+% Parameters
+mu = 1.0;           % Coefficient of friction (dry road)
+N = 4000;           % Normal load per tire (N)
+Fmax = mu * N;      % Maximum friction force
+
+% Create circle
+theta = linspace(0, 2*pi, 1000);
+Fx = Fmax * cos(theta);
+Fy = Fmax * sin(theta);
+
+figure;
+plot(Fx, Fy, 'LineWidth', 2);
+grid on;
+axis equal;
+xlabel('Longitudinal Force (N)');
+ylabel('Lateral Force (N)');
+title('Tire Friction Circle');
+clc; clear; close all;
+
+### 📌 2. Slip ratio range
+slip = linspace(0, 1, 100);
+
+% Simple tire model (qualitative)
+mu_peak = 1.0;
+slip_peak = 0.15;
+
+mu = mu_peak * (slip ./ slip_peak) .* exp(1 - slip ./ slip_peak);
+
+figure;
+plot(slip, mu, 'LineWidth', 2);
+grid on;
+xlabel('Slip Ratio');
+ylabel('Friction Coefficient');
+title('Slip Ratio vs Friction');
+
+
+
+
 ## 🧠 Key Takeaways
 
 - Tire–road friction limits all vehicle performance  
 - Friction depends on surface condition and tire properties  
 - Tires are load sensitive  
 - Longitudinal and lateral forces compete for grip  
-- Smooth control inputs maximize available friction  
+- Smooth control inputs maximize available friction
+- Braking and steering share the same friction limit.
+- The higher the speed, the greater the friction demand.
+- Wet roads dramatically reduce safety margin.
+- Combined braking + cornering increases understeer risk.
+- Smooth control inputs preserve friction reserve.
+
+This is why highway emergency maneuvers are so sensitive to road conditions.
+
 
 ---
 
@@ -565,7 +774,8 @@ Proper trail braking:
 - ABS does not shorten braking distance in all cases, but it:
   - Maintains steerability  
   - Prevents instability  
-  - Keeps tires near peak friction  
+  - Keeps tires near peak friction
+  - Even with the same brakes and driver input, braking distance increases significantly as tire–road friction decreases. This is why road condition awareness is critical for safety.
 
 ---
 

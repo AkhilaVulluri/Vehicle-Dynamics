@@ -17,6 +17,7 @@ The goal is to **simplify complex automotive engineering topics** into clear, pr
 - [Tire Dyamics ](https://github.com/AkhilaVulluri/Vehicle-Dynamics/blob/fa07c78d402dc1cba0b8d357c0ebaedb0efafe1c/Tire%20Dynamics%20Basics.md)
 - [Understeer_Vs_Overteer](https://github.com/AkhilaVulluri/Vehicle-Dynamics/blob/fa07c78d402dc1cba0b8d357c0ebaedb0efafe1c/Understeer_vs_Oversteer.md)
 - [Tire Road Friction ](https://github.com/AkhilaVulluri/Vehicle-Dynamics/blob/fa07c78d402dc1cba0b8d357c0ebaedb0efafe1c/Tire-Road-Friction.md)
+- [Understanding Forward Vehicle Dynamics – A Simple Yet Powerful Insight]
 - 
 - (More articles coming soon…)
 
